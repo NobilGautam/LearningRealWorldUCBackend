@@ -29,6 +29,14 @@
         <module>service</module>
         <module>app</module>
     </modules>
+
+    <dependencies>
+        <!-- Database Setup -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+    </dependencies>
     
     <dependencyManagement>
         <dependencies>

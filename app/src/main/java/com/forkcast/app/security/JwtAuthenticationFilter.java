@@ -39,7 +39,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                     @NonNull FilterChain filterChain) throws ServletException, IOException {
         
         String token = extractToken(request);
-        
+
+        //Todo: check if the email extracted from token exists in the db or not
         if (token != null) {
             try {
                 String email = JwtUtils.getEmailFromToken(token);
