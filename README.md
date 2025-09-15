@@ -32,7 +32,7 @@ backend/
 - **Spring Security** with JWT authentication
 - **Role-Based Access Control (RBAC)** with Admin and Outlet Manager roles
 - **JWT tokens stored in HTTP-only cookies** for frontend integration
-- **H2 in-memory database** for development
+- **Supabase Postgres Database** for development
 - **Lombok** for reducing boilerplate code
 
 ## API Endpoints
@@ -73,15 +73,7 @@ backend/
 
 3. **Access the application**:
    - Base URL: `http://localhost:8080`
-   - H2 Console: `http://localhost:8080/h2-console`
    - Health Check: `http://localhost:8080/api/health`
-
-## Database Configuration
-
-The application uses H2 in-memory database with the following configuration:
-- URL: `jdbc:h2:mem:forkcast`
-- Username: `sa`
-- Password: `password`
 
 ## Sample API Usage
 
@@ -126,7 +118,7 @@ curl http://localhost:8080/api/health
 - Jersey JAX-RS 3.1.3
 - Spring Security
 - Spring Data JPA
-- H2 Database
+- Supabase Database
 - JWT (java-jwt 4.4.0)
 - Lombok
 - Maven
