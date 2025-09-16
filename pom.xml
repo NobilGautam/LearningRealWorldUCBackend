@@ -94,6 +94,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- MapStruct for ObjectMapper -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>1.6.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>1.6.3</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     
@@ -110,6 +122,12 @@
                             <path>
                                 <groupId>org.projectlombok</groupId>
                                 <artifactId>lombok</artifactId>
+                            </path>
+                            <!-- Add this section for MapStruct -->
+                            <path>
+                                <groupId>org.mapstruct</groupId>
+                                <artifactId>mapstruct-processor</artifactId>
+                                <version>1.6.3</version>
                             </path>
                         </annotationProcessorPaths>
                     </configuration>

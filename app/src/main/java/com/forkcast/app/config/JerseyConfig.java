@@ -2,6 +2,7 @@ package com.forkcast.app.config;
 
 import com.forkcast.app.controllers.AuthController;
 import com.forkcast.app.controllers.HealthController;
+import com.forkcast.app.controllers.OutletController;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,6 +16,7 @@ public class JerseyConfig extends ResourceConfig {
         // Register controllers
         register(AuthController.class);
         register(HealthController.class);
+        register(OutletController.class);
         
         // Register features
         packages("com.forkcast.app.controllers");
